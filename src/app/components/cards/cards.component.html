@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+
+
+@for (item of recipes; track item.id){
+<div class="col-3 nht">
+<div class="card" style="width: 18rem;">
+  <img src="{{item.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">"{{item.title.slice(0,20)}}"</h5>
+    <p class="card-text">"{{item.des.slice(0,80)}}"</p>
+    <a routerLink="/more-details/{{item._id}}" class="btn btn-primary">More details</a>
+  </div>
+</div>
+</div>
+}
+</div>
+</div>
